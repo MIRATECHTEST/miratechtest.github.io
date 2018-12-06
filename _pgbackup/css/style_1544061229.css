@@ -220,9 +220,3 @@ img {
     -webkit-transform: rotate(180deg) scale(1.1);
     transform: rotate(180deg) scale(1.1);
 }
-
-@media (max-width:479px) {
-    .hide {
-        display: none;
-    }
-}

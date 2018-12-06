@@ -20,7 +20,7 @@ body,
 /* main wrapper */
 .cbp-contentslider {
     width: 100%;
-    height: 70%;
+    height: 95%;
     margin: 1em auto;
     position: relative;
     border: 4px solid #47a3da;
@@ -39,14 +39,13 @@ body,
 .cbp-contentslider > ul li {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 79%;
     left: 0;
     top: 0;
     padding: 1em;
     background: #fff;
 }
 
-/* Whithout JS, we use :target */
 .cbp-contentslider > ul li:target {
     z-index: 100;
 }
@@ -69,19 +68,17 @@ body,
     height: 100%;
     font-weight: 400;
     letter-spacing: 0.1em;
-    overflow: hidden;
-    color: #47a3da;
+    color: #f0c05b;
     background: #fff;
     outline: none;
     text-align: center;
     line-height: 3;
     position: relative;
-    padding-left: 3.125em;
     text-transform: uppercase;
-    border-right: 4px solid #47a3da;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    overflow: hidden;
 }
 
 .cbp-contentslider nav a span {
@@ -99,8 +96,10 @@ body,
 }
 
 .cbp-contentslider nav a.rc-active {
-    background-color: #47a3da;
+    background-color: #f7bf44;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Iconfont for navigation and headings */
@@ -156,12 +155,14 @@ body,
     font-weight: 300;
     margin: 0 0 0.3em;
     position: relative;
-    color: #47a3da;
+    color: #f7bf44;
     text-transform: uppercase;
     text-align: right;
     letter-spacing: 0.3em;
     padding: 0 0.2em 0 0;
     border-bottom: 4px solid #47a3da;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .cbp-contentslider h3[class^="icon-"]:before,
@@ -184,16 +185,16 @@ body,
     padding: 0 1em;
     overflow-x: hidden;
     overflow-y: auto;
+    height: 642px;
 }
 
 .cbp-contentslider .cbp-content {
     -webkit-column-rule: 1px dashed #47a3da;
-    -moz-column-rule: 1px dashed #47a3da;
     column-rule: 1px dashed #47a3da;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -o-column-count: 2;
-    column-count: 2;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;
     -webkit-column-gap: 1em;
     -moz-column-gap: 1em;
     -o-column-gap: 1em;
@@ -221,7 +222,7 @@ body,
 
 @media screen and (max-width: 67.75em) {
     .cbp-contentslider {
-        font-size: 85%;
+        font-size: 75%;
     }
 
     .cbp-contentslider nav a[class^="icon-"]:before,
@@ -231,11 +232,28 @@ body,
     }
 
     .cbp-contentslider nav a span {
-        display: none;
+        display: cover;
     }
 }
 
 @media screen and (max-width: 43em) {
+    .cbp-contentslider h3 {
+        font-size: 2em;
+    }
+
+    .cbp-contentslider .cbp-content {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -o-column-count: 2;
+        column-count: 2;
+    }
+
+    .cbp-contentslider li > div {
+        top: 5em;
+    }
+}
+
+@media screen and (max-width: 30em) {
     .cbp-contentslider h3 {
         font-size: 2em;
     }
@@ -252,7 +270,7 @@ body,
     }
 }
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 15em) {
     .cbp-contentslider nav a {
         padding: 0;
     }
@@ -261,4 +279,100 @@ body,
     .cbp-contentslider h3[class*=" icon-"]:before {
         display: none;
     }
+}
+
+.paycheck {
+    height: 100%;
+    width: 100%;
+}
+
+.sssf {
+    width: 200%;
+    font-size: 32px;
+    margin-bottom: -54px;
+    top: 7px;
+    margin-top: -7px;
+    padding-top: 80px;
+}
+
+input {
+    /* width: 262px */
+    height: 37px;
+}
+
+vvv {
+}
+
+.form-check-input {
+}
+
+add payment {
+    margin-left: 1px;
+    padding-left: 12px;
+    left: -7px;
+    right: 8px;
+    width: -15px;
+}
+
+personal {
+}
+
+personnal {
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/personal__630990.png');
+    background-repeat: no-repeat;
+}
+
+.personal {
+    background-image: url('personal__630990.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header bankin {
+    background-color: #ab3f3f;
+}
+
+ss {
+    background-position: left center;
+    background-size: cover;
+}
+
+.banking {
+    background-image: url('../banking.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+.bankingheader {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.header1 {
+    background-image: url('personal__630990.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.header3 {
+    background-image: url('../banking.png');
+}
+
+.block3icon {
+    background-image: url('paycheck-549308.png');
+}
+
+.payicon {
+    background-image: url('../paycheck-549308.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.333 {
+}
+
+.333 {
 }
