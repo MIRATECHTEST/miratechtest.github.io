@@ -20,7 +20,7 @@ body,
 /* main wrapper */
 .cbp-contentslider {
     width: 100%;
-    height: 70%;
+    height: 95%;
     margin: 1em auto;
     position: relative;
     border: 4px solid #47a3da;
@@ -46,7 +46,6 @@ body,
     background: #fff;
 }
 
-/* Whithout JS, we use :target */
 .cbp-contentslider > ul li:target {
     z-index: 100;
 }
@@ -75,9 +74,7 @@ body,
     text-align: center;
     line-height: 3;
     position: relative;
-    padding-left: 3.125em;
     text-transform: uppercase;
-    border-right: 4px solid #47a3da;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -93,9 +90,11 @@ body,
     box-shadow: 1px 0 #47a3da; /* fills gap caused by rounding */
 }
 
-.cbp-contentslider nav a:hover {
-    background-color: #47a3da;
-    color: #fff;
+@media (min-width:480px) {
+    .cbp-contentslider nav a:hover {
+        background-color: #47a3da;
+        color: #fff;
+    }
 }
 
 .cbp-contentslider nav a.rc-active {
@@ -148,7 +147,7 @@ body,
 .cbp-contentslider [class^="icon-"].rc-active:before,
 .cbp-contentslider [class*=" icon-"].rc-active:before,
 .cbp-contentslider nav a:hover:before {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .cbp-contentslider h3 {
@@ -188,12 +187,10 @@ body,
     padding: 0 1em;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 596px;
+    height: 642px;
 }
 
 .cbp-contentslider .cbp-content {
-    -webkit-column-rule: 1px dashed #47a3da;
-    column-rule: 1px dashed #47a3da;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -o-column-count: 3;
@@ -225,7 +222,7 @@ body,
 
 @media screen and (max-width: 67.75em) {
     .cbp-contentslider {
-        font-size: 85%;
+        font-size: 75%;
     }
 
     .cbp-contentslider nav a[class^="icon-"]:before,
@@ -235,13 +232,30 @@ body,
     }
 
     .cbp-contentslider nav a span {
-        display: none;
+        display: cover;
     }
 }
 
 @media screen and (max-width: 43em) {
     .cbp-contentslider h3 {
         font-size: 2em;
+    }
+
+    .cbp-contentslider .cbp-content {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -o-column-count: 2;
+        column-count: 2;
+    }
+
+    .cbp-contentslider li > div {
+        top: 5em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .cbp-contentslider h3 {
+        font-size: 29px;
     }
 
     .cbp-contentslider .cbp-content {
@@ -256,11 +270,10 @@ body,
     }
 }
 
-@media screen and (max-width: 25em) {
-    .cbp-contentslider nav a {
-        padding: 0;
-    }
-
+@media screen and (max-width: 15em) {
+    /* .cbp-contentslider nav a {
+    padding: 0;
+} */
     .cbp-contentslider h3[class^="icon-"]:before,
     .cbp-contentslider h3[class*=" icon-"]:before {
         display: none;
@@ -268,21 +281,23 @@ body,
 }
 
 .paycheck {
-    width: 935px;
+    height: 100%;
+    width: 100%;
 }
 
-.sssf {
-    width: 98%;
-    font-size: 32px;
-    margin-bottom: -54px;
-    top: 7px;
-    margin-top: -7px;
-    padding-top: 80px;
+@media (min-width:480px) {
+    .sssf {
+        width: 200%;
+        margin-bottom: -54px;
+        top: 7px;
+        margin-top: -7px;
+        padding-top: 80px;
+    }
 }
 
 input {
     /* width: 262px */
-    height: 28px;
+    height: 37px;
 }
 
 vvv {
@@ -308,7 +323,7 @@ personnal {
 }
 
 .personal {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/personal__630990.png');
+    background-image: url('personal__630990.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -323,7 +338,7 @@ ss {
 }
 
 .banking {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/banking.png');
+    background-image: url('../banking.png');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -335,23 +350,102 @@ ss {
     background-position: left center;
 }
 
-.header1 {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/personal__630990.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
+@media (min-width:320px) {
+    .header1 {
+        background-image: url('personal__630990.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+    }
 }
 
-.header3 {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/banking.png');
+@media (min-width:320px) {
+    .header3 {
+        background-image: url('../banking.png');
+    }
 }
 
-.block3icon {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/paycheck-549308.png');
+@media (min-width:320px) {
+    .block3icon {
+        background-image: url('paycheck-549308.png');
+    }
 }
 
 .payicon {
-    background-image: url('file:///Users/yuribondarenko/Desktop/icons/paycheck-549308.png');
+    background-image: url('../paycheck-549308.png');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.333 {
+}
+
+.333 {
+}
+
+@media (max-width:319px) {
+    .pricemobile {
+        width: 225px;
+        height: 162px;
+        margin-left: -13px;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .smallmobile {
+    }
+}
+
+@media (max-width:319px) {
+    .smallmobile {
+        width: 229px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .smallmobile {
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .smallmobile {
+        width: 339px;
+        height: 493px;
+    }
+}
+
+undefined: undefined;
+
+@media only screen and (max-width:479px) {
+    .icmob {
+        background-position: center center;
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width:1599px) {
+    .nohead {
+        background-color: #ff0000;
+    }
+}
+
+@media only screen and (min-width:480px) {
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .7 {
+    }
+
+    .iphone {
+    }
+
+    .price {
+        width: 277px;
+        margin-left: -11px;
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .icmob {
+    }
 }

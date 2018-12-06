@@ -5,6 +5,7 @@
 }
 
 body {
+    line-height: 1.5;
     font-family: 'Lato';
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -14,7 +15,7 @@ h1,
 h2,
 h3,
 p {
-    font-weight: 0;
+    font-weight: 300;
     margin: 0 0 2.4rem 0;
 }
 
@@ -22,6 +23,12 @@ h1,
 h2,
 h3 {
     line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
 }
 
 /**
@@ -236,9 +243,8 @@ img {
 }
 
 @media (max-width:319px) {
-}
-
-@media only screen and (min-width:480px) {
-    .icmob {
+    .iconmob {
+        color: #f2c66c;
+        float: right;
     }
 }
