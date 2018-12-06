@@ -323,7 +323,7 @@ personnal {
 }
 
 .personal {
-    background-image: url('personal__630990.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/personal__630990.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -338,7 +338,7 @@ ss {
 }
 
 .banking {
-    background-image: url('../banking.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/banking.png');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -351,22 +351,22 @@ ss {
 }
 
 .header1 {
-    background-image: url('personal__630990.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/personal__630990.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
 }
 
 .header3 {
-    background-image: url('../banking.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/banking.png');
 }
 
 .block3icon {
-    background-image: url('paycheck-549308.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/paycheck-549308.png');
 }
 
 .payicon {
-    background-image: url('../paycheck-549308.png');
+    background-image: url('file:///Users/yuribondarenko/Desktop/icons/paycheck-549308.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
