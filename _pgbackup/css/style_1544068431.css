@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 body {
@@ -98,7 +96,7 @@ a {
     color: rgba(0,0,0,0.7);
     line-height: 1;
     cursor: pointer;
-    background: rgba(33, 67, 148, 0.16);
+    background: #ffebee;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-user-select: none;
@@ -149,12 +147,6 @@ img {
     background: #ffebee;
     display: flex;
     align-items: center;
-    background-size: contain;
-    background-position: center center;
-    background-image: url('../jsiuswiuws.jpg');
-    height: 269px;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
 }
 
 .demo-btns header h1 {
@@ -175,7 +167,7 @@ img {
 
 .demo-btns p {
     text-align: center;
-    color: #121212;
+    color: #fff;
 }
 
 .demo-btns .modal__trigger {
@@ -232,19 +224,5 @@ img {
 @media (max-width:479px) {
     .hide {
         display: none;
-    }
-}
-
-@media (max-width:319px) {
-    .addpaymenntmobile {
-        width: 213px;
-        height: 21px;
-    }
-}
-
-@media (max-width:319px) {
-    .iconmob {
-        color: #f2c66c;
-        float: right;
     }
 }

@@ -90,9 +90,11 @@ body,
     box-shadow: 1px 0 #47a3da; /* fills gap caused by rounding */
 }
 
-.cbp-contentslider nav a:hover {
-    background-color: #47a3da;
-    color: #fff;
+@media (min-width:320px) {
+    .cbp-contentslider nav a:hover {
+        background-color: #47a3da;
+        color: #fff;
+    }
 }
 
 .cbp-contentslider nav a.rc-active {
@@ -189,8 +191,6 @@ body,
 }
 
 .cbp-contentslider .cbp-content {
-    -webkit-column-rule: 1px dashed #47a3da;
-    column-rule: 1px dashed #47a3da;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     -o-column-count: 3;
@@ -255,7 +255,7 @@ body,
 
 @media screen and (max-width: 30em) {
     .cbp-contentslider h3 {
-        font-size: 2em;
+        font-size: 29px;
     }
 
     .cbp-contentslider .cbp-content {
@@ -286,13 +286,15 @@ body,
     width: 100%;
 }
 
-.sssf {
-    width: 200%;
-    font-size: 32px;
-    margin-bottom: -54px;
-    top: 7px;
-    margin-top: -7px;
-    padding-top: 80px;
+@media (min-width:320px) {
+    .sssf {
+        width: 200%;
+        font-size: 32px;
+        margin-bottom: -54px;
+        top: 7px;
+        margin-top: -7px;
+        padding-top: 80px;
+    }
 }
 
 input {
@@ -350,19 +352,25 @@ ss {
     background-position: left center;
 }
 
-.header1 {
-    background-image: url('personal__630990.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left center;
+@media (min-width:320px) {
+    .header1 {
+        background-image: url('personal__630990.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+    }
 }
 
-.header3 {
-    background-image: url('../banking.png');
+@media (min-width:320px) {
+    .header3 {
+        background-image: url('../banking.png');
+    }
 }
 
-.block3icon {
-    background-image: url('paycheck-549308.png');
+@media (min-width:320px) {
+    .block3icon {
+        background-image: url('paycheck-549308.png');
+    }
 }
 
 .payicon {
@@ -377,8 +385,47 @@ ss {
 .333 {
 }
 
-@media (max-width:479px) {
+@media (max-width:319px) {
     .pricemobile {
-        width: 276px;
+        width: 225px;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .smallmobile {
+    }
+}
+
+@media (max-width:319px) {
+    .smallmobile {
+        width: 229px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .smallmobile {
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .smallmobile {
+        width: 339px;
+        height: 493px;
+    }
+}
+
+undefined: undefined;
+
+@media only screen and (max-width:319px) {
+    .icmob {
+        overflow: hidden;
+        background-position: center center;
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width:1599px) {
+    .nohead {
+        background-color: #ff0000;
     }
 }

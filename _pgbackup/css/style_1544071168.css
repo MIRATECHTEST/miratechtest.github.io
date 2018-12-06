@@ -98,7 +98,7 @@ a {
     color: rgba(0,0,0,0.7);
     line-height: 1;
     cursor: pointer;
-    background: rgba(33, 67, 148, 0.16);
+    background: #ffebee;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-user-select: none;
@@ -150,11 +150,8 @@ img {
     display: flex;
     align-items: center;
     background-size: contain;
-    background-position: center center;
+    background-position: right top;
     background-image: url('../jsiuswiuws.jpg');
-    height: 269px;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
 }
 
 .demo-btns header h1 {
@@ -175,7 +172,7 @@ img {
 
 .demo-btns p {
     text-align: center;
-    color: #121212;
+    color: #fff;
 }
 
 .demo-btns .modal__trigger {
